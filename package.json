@@ -1,0 +1,30 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "Helpful tool for Project management",
+  "main": "lib/index.js",
+  "type": "module",
+  "bin": "./lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "node ./node_modules/.bin/jasmine",
+    "test-debug": "node --inspect-brk ./node_modules/.bin/jasmine",
+    "test-watch": "watch 'clear ; node ./node_modules/.bin/jasmine' . --wait=2 --interval=1"
+  },
+  "keywords": [],
+  "author": "Wyatt Greenway",
+  "license": "MIT",
+  "dependencies": {
+    "cmded": "^1.2.5",
+    "prompts": "^2.4.2"
+  },
+  "devDependencies": {
+    "@spothero/eslint-plugin-spothero": "github:spothero/eslint-plugin-spothero",
+    "colors": "^1.4.0",
+    "diff": "^5.1.0",
+    "eslint": "^8.54.0",
+    "jasmine": "^5.1.0"
+  }
+}
